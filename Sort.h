@@ -5,9 +5,9 @@ using namespace std;
 class Sort
 {
 public:
-	void display(int arr[])
+	void display(int arr[], int len)
 	{
-		for (int i = 0; i < n; i++) cout << arr[i] << " ";
+		for (int i = 0; i < len; i++) cout << arr[i] << " ";
 		cout << endl;
 		return;
 	};
@@ -18,16 +18,15 @@ public:
 		*b = temp;
 		return;
 	};
-	bool checkOrder(int arr[])
+	bool checkOrder(int arr[], int len)
 	{
-		for (int i = 0; i < n - 1; i++)
+		for (int i = 0; i < len - 1; i++)
 		{
 			if (arr[i] > arr[i + 1]) return false;
 		}
 		return true;
 	};
 
-protected:
 	int n;
 };
 

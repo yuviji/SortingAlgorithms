@@ -14,8 +14,8 @@ int main()
     cout << 
         "1. Selection Sort \n" << 
         "2. Insertion Sort \n" << 
-        "3. Bubble Sort \n " << 
-        "4. Merge Sort \n" <<
+        "3. Bubble Sort \n" << 
+        //"4. Merge Sort \n" <<
         endl;
 
     int choice;

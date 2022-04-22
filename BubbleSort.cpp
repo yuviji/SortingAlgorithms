@@ -1,6 +1,5 @@
 #include <iostream>
 #include "BubbleSort.h"
-
 using namespace std;
 
 /*
@@ -17,8 +16,12 @@ void BubbleSort::sort(int arr[], int numTerms)
 	{
 		for (int j = 0; j < numTerms - 1; j++)
 		{
-			if (arr[j] > arr[j + 1]) swap(&arr[j], &arr[j + 1]);
+			if (arr[j] > arr[j + 1])
+				swap(&arr[j], &arr[j + 1]);
 		}
 	}
-	if (checkOrder(arr)) display(arr);
+	if (checkOrder(arr, n))
+	{
+		display(arr, n); //Display it
+	}
 }

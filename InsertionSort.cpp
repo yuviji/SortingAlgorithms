@@ -3,6 +3,10 @@
 
 using namespace std;
 
+/*
+	Time Complexity: O(n^2)
+*/
+
 InsertionSort::InsertionSort() : n(0)
 {
 }
@@ -33,6 +37,9 @@ void InsertionSort::sort(int arr[], int numTerms)
 			arr[z] = key;
 		}
 	}
-	if(checkOrder(arr)) display(arr); //Display it
+	if (checkOrder(arr, n))
+	{
+		display(arr, n); //Display it
+	}
 	return;
 }

@@ -3,6 +3,10 @@
 
 using namespace std;
 
+/*
+	Time Complexity: O(n^2)
+*/
+
 SelectionSort::SelectionSort(): n(0)
 {
 }
@@ -26,6 +30,9 @@ void SelectionSort::sort(int arr[], int numTerms)
 		swap(&arr[i], &arr[min]); //Swap the first element in unsorted array with new minimum
 	}
 
-	if (checkOrder(arr)) display(arr); //Display it
+	if (checkOrder(arr, n))
+	{
+		display(arr, n); //Display it
+	}
 	return;
 }
